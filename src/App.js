@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./css/style.css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import {randomString} from "./helpers/helpers";
+
+import {useState, useEffect} from 'react';
+
+
+function App(){
+
+    const [show, setShow] = useState(false)
+
+    function showHeart(){
+        setShow(true)
+    }
+    return (
+        <div className="d-flex flex-column mx-auto">
+            {!show &&
+                <button className="btn" onClick={showHeart}>Привет, Оля!Нажми на меня!))</button>
+            }
+
+            {show &&
+                <div className="d-flex mx-auto">
+                    <div className="text">I</div> <div className="heart "></div> <div className="text">YOU!</div>
+                </div>
+            }
+
+        </div>
+
+    );
 }
 
 export default App;
