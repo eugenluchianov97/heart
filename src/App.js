@@ -15,7 +15,7 @@ function App() {
 
         {open && (
             <>
-                <div>Kristina </div><div id="heart"></div><div>is beautiful!</div>
+                <div>Olea </div><div id="heart"></div><div>is beautiful!</div>
             </>
         )}
 
