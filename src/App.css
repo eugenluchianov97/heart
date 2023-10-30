@@ -78,8 +78,7 @@ body{
 
 
 * {
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Shantell Sans', cursive;
 }
 
 .container {
@@ -89,7 +88,7 @@ body{
   color:#fff;
   /*text-transform: uppercase;*/
   font-weight: bold;
-  font-size:25px
+  font-size:35px
 }
 
 .click {
